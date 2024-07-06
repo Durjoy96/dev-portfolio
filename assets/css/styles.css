@@ -39,7 +39,10 @@
 header {
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat; 
-    background-position: right bottom, 25px top;
+    background-position: right bottom, 25px 50px;
+    background-attachment: scroll, fixed;
+    background-color: var(--base-200);
+    border: 1px solid transparent;
 }
 
 /* navbar */
@@ -93,7 +96,7 @@ li > a {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    margin: 0 35px 0 200px;
+    margin: 0 35px 0 200px; 
 }
 
 .banner-content {
@@ -161,4 +164,39 @@ main {
     font-size: 20px;
     color: var(--dark-2);
     font-weight: 700;
+}
+
+#whatIdo {
+    text-align: center;
+    background-color: var(--base-100);
+}
+
+.card-box {
+    margin: 50px 0 0;
+    display: flex;
+    gap: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--base-100);
+}
+
+.card {
+    text-align: left;
+    box-shadow: 0 6px 50px rgba(0, 0, 0, 6%);
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-1);
+    margin: 30px 0 0;
+}
+
+.card-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark-3);
+    margin: 20px 0 0;
+    line-height: 28px;
 }
