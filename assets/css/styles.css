@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FD6E0A;
+    --while: #fff;
+    --dark-1: #181818;
+    --dark-2: #474747;
+    --dark-3: #757575;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+header {
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat; 
+    background-position: right bottom, 25px top;
+}
+
+/* navbar */
+nav {
+    margin: 50px 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.nav-title {
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--dark-1);
+}
+
+.nav-title span {
+    color: var(--primary);
+}
+
+nav > ul {
+    list-style: none;   
+    display: flex;
+    align-items: center;
+    gap: 3.18rem; 
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--dark-2);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize; 
+}
+
+.primary-btn {
+    padding: 18px 35px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize; 
+    color: var(--while);
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+
+/* banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 0 35px 0 200px;
+}
+
+.banner-content {
+    max-width: 585px;
+}
+
+.banner-greeting {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--dark-2);
+}
+
+.title {
+    font-size: 85px;
+    font-weight: 700;
+    color: var(--dark-1);
+}
+
+.description {
+    color: var(--dark-3);
+    font-weight: 500;
+    line-height: 30px;
+    margin: 14px 0 30px;
+}
+
+.secondary-btn {
+    padding: 18px 35px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize; 
+    color: var(--primary);
+    background-color: var(--while);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    margin: 0 0 0 30px; 
+}
