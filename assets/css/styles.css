@@ -41,6 +41,10 @@
     cursor: pointer;
 }
 
+.resume-border-bottom {
+    border-bottom: 1px solid var(--dark-5);
+}
+
 .open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -233,6 +237,9 @@ main {
 
 .resume-card {
     padding: 30px 0;
+}
+
+.resume-card:nth-child(3) {
     border-bottom: 1px solid var(--dark-5);
 }
 
