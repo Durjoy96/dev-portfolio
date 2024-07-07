@@ -38,6 +38,7 @@
     background-color: var(--primary);
     border: 2px solid var(--primary);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .open-sans {
@@ -92,6 +93,12 @@ li > a {
     text-transform: capitalize; 
 }
 
+/* main styles */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 /* banner */
 .banner {
     display: flex;
@@ -133,12 +140,7 @@ li > a {
     border: 2px solid var(--primary);
     border-radius: 5px;
     margin: 0 0 0 30px; 
-}
-
-/* main styles */
-main {
-    max-width: 1140px;
-    margin: 0 auto;
+    cursor: pointer;
 }
 
 /* about us section styles */
@@ -167,9 +169,14 @@ main {
     font-weight: 700;
 }
 
+/* what i do/skills styles*/
 #whatIdo {
     text-align: center;
     background-color: var(--base-100);
+}
+
+#whatIdo .section-description {
+    padding: 0 100px;
 }
 
 .card-box {
@@ -204,7 +211,8 @@ main {
 
 /* resume styles */
 #resume {
-    margin: 130px 0 0;
+    margin: 130px 0;
+    background-color: var(--base-100);
 }
 
 #resume h2 {
@@ -252,4 +260,54 @@ main {
 .resume-btn {
     text-align: center;
     margin: 50px 0 0;
+}
+
+/* footer styles */
+footer {
+    background-color: var(--base-200);
+    padding: 106px 0;
+}
+
+.footer-parent {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 117px;
+}
+
+footer .section-description {
+    margin: 20px 0 0; 
+    max-width: 562px;
+}
+
+.social-icons {
+    margin: 30px 0 0;
+}
+
+.social-icons i {
+    margin: 0 26px 0 0;
+    font-size: 24px;
+    color: var(--primary)
+}
+
+form {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 28px 0 0; 
+}
+
+input[name="userInput"],
+textarea[name="userInput"] {
+    padding: 18px 30px;
+    width: 443px;
+    background-color: var(--base-100);
+    border: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    resize: none;
 }
