@@ -318,3 +318,9 @@ textarea[name="userInput"] {
     line-height: 28px;
     resize: none;
 }
+
+input[name="userInput"]:focus,
+textarea[name="userInput"]:focus {
+    outline: none;
+    border: 2px solid var(--primary);
+}
