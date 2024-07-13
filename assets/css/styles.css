@@ -283,6 +283,23 @@ main {
     line-height: 28px;
 }
 
+/* what i do section mobile devices styles */
+@media screen and (max-width: 576px) {
+    #whatIdo {
+        margin: 60px 0 0;
+        padding: 0 1rem;
+    }
+
+     #whatIdo .section-description {
+        padding: 0;
+        margin: 12px 0 0;
+     }
+
+     .card-box {
+        flex-direction: column;
+     }
+}
+
 /* resume styles */
 #resume {
     margin: 130px 0;
