@@ -356,6 +356,27 @@ main {
     margin: 50px 0 0;
 }
 
+/* resume section mobile styles */
+@media screen and (max-width: 576px) {
+    #resume {
+        margin: 60px 0 0;
+        padding: 0 1rem;
+    }
+
+    #resume h2 {
+        text-align: left;
+    }
+
+    .resume-content {
+        margin: 50px 0 0;
+        flex-direction: column;
+    }
+    
+    .resume-btn {
+        margin: 32px 0 0;
+    }
+}
+
 /* footer styles */
 footer {
     background-color: var(--base-200);
