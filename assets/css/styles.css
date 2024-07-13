@@ -15,6 +15,11 @@
     --dark-5: #D1D1D1;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 /* shared styles */
 .section-title {
     font-size: 35px;
@@ -143,6 +148,7 @@ li > a {
 
 /* small devices styles */
 @media screen and (max-width: 576px) {
+
     header {
         background-image: none;
     }
@@ -170,7 +176,7 @@ li > a {
     }
 
     .secondary-btn {
-        margin: 0 0 0 1.5rem;
+        margin: 1rem 0 0 0;
     }
 }
 
