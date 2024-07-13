@@ -146,15 +146,22 @@ li > a {
     cursor: pointer;
 }
 
-/* small devices styles */
+/* header mobile devices styles */
 @media screen and (max-width: 576px) {
 
     header {
         background-image: none;
+        background-color: var(--base-100);
     }
 
     nav {
         margin: 1rem;
+    }
+
+    nav > ul {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
     }
 
     .banner {
@@ -210,6 +217,30 @@ main {
     font-size: 20px;
     color: var(--dark-2);
     font-weight: 700;
+}
+
+/* about section mobile devices styles */
+@media screen and (max-width: 576px) {
+
+    #about {
+        padding: 3rem 1rem;
+        margin: 60px 0 0;
+    }
+
+    .section-title,
+    .section-description,
+    .about-item {
+        text-align: left;
+    }
+
+    #about .section-description {
+        margin: 12px 0 0;
+    }
+
+    .about-items {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 /* what i do/skills styles*/
